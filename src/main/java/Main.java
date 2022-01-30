@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) throws MyArraySizeException, MyArrayDataException {
-        String[][] array = new String[][]{{"1", "2", "5", "4"}, {"5", "v", "7", "8"}, {"1", "2", "3", "4"}, {"5", "6", "7", "8"}};
+        String[][] array = new String[][]{{"1", "2", "5", "4"}, {"5", "6", "7", "8"}, {"1", "2", "3", "4"}, {"5", "6", "7", "8"}};
         try {
             masive(array);
         } catch (MyArraySizeException e) {
@@ -29,7 +29,7 @@ public class Main {
                         sum = intarray[i][j] + sum;
                         System.out.print(intarray[i][j]);
                     } else if (!array[i][j].matches(s1)) throw new MyArrayDataException(" ");
-                    
+
                 }
                 System.out.println();
 
